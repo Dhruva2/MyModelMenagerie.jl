@@ -3,6 +3,10 @@ uuid = "7c35333e-f05c-485e-b6f6-27244a3c2401"
 authors = ["Dhruva Venkita Raman"]
 version = "0.1.0"
 
+[deps]
+ModelingToolkit = "961ee093-0014-501f-94e3-6117800e7a78"
+OrdinaryDiffEq = "1dea7af3-3e70-54e6-95c3-0bf5283fa5ed"
+
 [compat]
 julia = "1.4"
 
