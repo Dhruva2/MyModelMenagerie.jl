@@ -24,5 +24,5 @@ function MichaelisMenten(input)
   od = ODESystem(eqs, t, first.(ics),first.(ps))
   # tspan = (0.,100.)
   # prob = ODEProblem(od, ics, tspan, ps)
-  return od, ics, ps
+  return od, ics, tspan, ps
 end
