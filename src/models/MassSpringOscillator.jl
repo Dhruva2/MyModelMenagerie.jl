@@ -19,10 +19,10 @@ function MassSpringOscillator(input)
   @parameters t
   @parameters k,c,m
   @derivatives D'~t
-  @variables pos(t) vel(t) inp(t)
+  @variables pos(t) vel(t)
 
   eqs = [D(pos) ~ vel,
-        D(vel) ~ (1/m)*(input(t) - c*vel + k*pos)
+        D(vel) ~ (-1/m)*(c*vel + k*pos - input(t))
   ]
 
   ps = [k,c,m] .=>  [2.,1.,4.] 
