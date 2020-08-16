@@ -49,7 +49,7 @@ ps = [k_1=>0.4, k_2=>0.2, k_3=>0.4, k_4=>0.2, k_5=>0.4, k_6=>0.2, k_7=>0.5, k_8=
 
 
 od = ODESystem(eqs, t, first.(ic), first.(ps))
-of = ODEFunction(od)
+# of = ODEFunction(od)
 tspan = (0.,100.)
 return od, ic, tspan, ps
 end

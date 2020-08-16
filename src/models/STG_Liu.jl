@@ -25,8 +25,8 @@ function  CalciumNeuron(input)
     statevars = [V, Ca, mNa, hNa, mCaS, hCaS, mCaT, hCaT, mIh, mKa, hKa, mKCa, mKdr]
     
     # calcium reversal potential
-    eCa = (500.0)*(8.6174e-5)*(283.15)*(log(max((3000.0/Ca),1e-5)))
-
+    # eCa = (500.0)*(8.6174e-5)*(283.15)*(log(max((3000.0/Ca),1e-5)))
+    eCa = (500.0)*(8.6174e-5)*(283.15)*(log((3000.0/Ca)))
 
 
 
