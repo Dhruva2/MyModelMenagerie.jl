@@ -7,6 +7,14 @@ using OrdinaryDiffEq
 solves STG calcium model (Liu 1998)
 
 The log(3000.0/Ca) in the algorithm doesn't play nicely with Zygote. Don't know why. I've maxed it with zero to make it work.
+
+All neurons have following channels (with some conductances at 0:)
+NaV
+CaT
+CaS
+H
+Kd
+Leak
 """
 
 
