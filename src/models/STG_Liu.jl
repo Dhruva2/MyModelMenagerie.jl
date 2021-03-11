@@ -22,7 +22,7 @@ Leak
 function  CalciumNeuron(input)
     
     @parameters t
-    @derivatives D'~t
+    D = Differential(t)
 
 
     @parameters eNa eh eK eleak tauCa gNabar gCaSbar gCaTbar gKabar gKCabar gKdrbar ghbar gleak

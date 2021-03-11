@@ -18,7 +18,7 @@ function MassSpringOscillator(input)
     
   @parameters t
   @parameters k,c,m
-  @derivatives D'~t
+  D = Differential(t)
   @variables pos(t) vel(t)
 
   eqs = [D(pos) ~ vel,

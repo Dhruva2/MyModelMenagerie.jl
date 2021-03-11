@@ -12,7 +12,7 @@ function MichaelisMenten(input)
     
   @parameters t
   @parameters kon koff kcat
-  @derivatives D'~t
+  D = Differential(t)
   @variables pos(t) vel(t) inp(t)
 
   eqs = [D(pos) ~ vel,

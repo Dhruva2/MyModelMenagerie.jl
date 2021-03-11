@@ -12,7 +12,7 @@ Solved. The heaviside function was ill conditioned. Made it a sigmoid and everyt
 function  NFKBModel(input)
     
 @parameters t
-@derivatives D'~t
+D = Differential(t)
 
 
 @parameters kprod kdeg k1 k2 k3 a1 a2 a3 t1 t2 c6a i1 kv c1 c2 c3 c4 c5 c4a c5a i1a e1a c1a c2a c3a e2a c1c c2c c3c

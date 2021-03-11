@@ -13,7 +13,7 @@ Accompanying article is here https://www.pnas.org/content/100/12/7051
 function CircadianOscillator(input=nothing)
 println("default input is t -> 1.5. If CircadianOscillator() is called with no arguments, the default is used")
 @parameters t
-@derivatives D'~t
+D = Differential(t)
 @variables  M_P(t) M_C(t) M_B(t) P_C(t) C_C(t) P_CP(t) C_CP(t) PC_C(t) PC_N(t) PC_CP(t) PC_NP(t) B_C(t) B_CP(t) B_N(t) B_NP(t) I_N(t)
 
 @parameters k_1 k_2 k_3 k_4 k_5 k_6 k_7 k_8 K_AP K_AC K_IB k_dmb k_dmc  k_dmp k_dn  k_dnc K_d K_dp K_p  K_mB K_mC K_mP k_sB k_sC k_sP m n V_1B V_1C V_1P V_1PC V_2B V_2C V_2P V_2PC V_3B V_3PC V_4B V_4PC V_phos v_dBC v_dBN v_dCC v_dIN v_dPC v_dPCC v_dPCN v_mB v_mC v_mP v_sB v_sC #v_sP
