@@ -9,10 +9,7 @@ OrdinaryDiffEq = "1dea7af3-3e70-54e6-95c3-0bf5283fa5ed"
 Plots = "91a5bcdd-55d7-5caf-9e0b-520d859cae80"
 
 [compat]
-ModelingToolkit = "3.16, 4.3, 5.0"
-OrdinaryDiffEq = "5.47"
-Plots = "1.10"
-julia = "1.4"
+julia = "1.6"
 
 [extras]
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"

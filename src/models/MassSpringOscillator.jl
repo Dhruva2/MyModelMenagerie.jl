@@ -16,21 +16,21 @@
 
 function MassSpringOscillator(input)
     
-  @parameters t
-  @parameters k,c,m
-  D = Differential(t)
-  @variables pos(t) vel(t)
+    @variables t
+    @parameters k, c, m
+    D = Differential(t)
+    @variables pos(t) vel(t)
 
-  eqs = [D(pos) ~ vel,
-        D(vel) ~ (-1/m)*(c*vel + k*pos - input(t))
+    eqs = [D(pos) ~ vel,
+        D(vel) ~ (-1 / m) * (c * vel + k * pos - input(t))
   ]
 
-  ps = [k,c,m] .=>  [2.,1.,4.] 
-  ics = [pos, vel] .=> [1.,0.]
-  od = ODESystem(eqs, t, first.(ics),first.(ps))
-  tspan = (0.,100.)
+    ps = [k,c,m] .=>  [2.,1.,4.] 
+    ics = [pos, vel] .=> [1.,0.]
+    od = ODESystem(eqs, t, first.(ics), first.(ps); name=:mass_spring)
+    tspan = (0., 100.)
   # prob = ODEProblem(od, ics, tspan, ps)
-  return od, ics, tspan, ps
+    return od, ics, tspan, ps
 end
 
 # od,ic,ps = create(t->0)

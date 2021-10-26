@@ -9,5 +9,4 @@ include("models/STG_Liu.jl")
 include("models/NFKB.jl")
 
 export CircadianOscillator, CalciumNeuron, MassSpringOscillator, NFKBModel, NFKB_output_map
-
 end
